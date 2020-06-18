@@ -1,6 +1,6 @@
 CREATE TABLE system_change_log (
     id INTEGER PRIMARY KEY NOT NULL,
-    logdate timestamp,
+    logdate datetime,
     login TEXT,
     tablename TEXT,
     primarykey TEXT,
@@ -21,7 +21,7 @@ CREATE TABLE system_change_log (
 );
 CREATE TABLE system_sql_log (
     id INTEGER PRIMARY KEY NOT NULL,
-    logdate timestamp,
+    logdate datetime,
     login TEXT,
     database_name TEXT,
     sql_command TEXT,
@@ -41,11 +41,11 @@ CREATE TABLE system_access_log (
     id INTEGER PRIMARY KEY NOT NULL,
     sessionid text,
     login text,
-    login_time timestamp,
+    login_time datetime,
     login_year varchar(4),
     login_month varchar(2),
     login_day varchar(2),
-    logout_time timestamp,
+    logout_time datetime,
     impersonated char(1),
     access_ip varchar(45)
 );

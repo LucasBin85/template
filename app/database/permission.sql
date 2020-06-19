@@ -152,6 +152,7 @@ INSERT INTO system_group_program VALUES(37,1,37);
 INSERT INTO system_group_program VALUES(38,1,38);
 INSERT INTO system_group_program VALUES(39,1,39);
 INSERT INTO system_group_program VALUES(40,1,40);
+INSERT INTO system_group_program VALUES(41,1,41);
 
 INSERT INTO system_user_program VALUES(1,2,7);
 
